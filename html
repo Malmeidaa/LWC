@@ -1,0 +1,28 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-arround_medium" if:true={visible}>
+			<p>Empresa: {empresa}</p>
+			<p>CNPJ: {cnpj}</p>
+			<p>Endereço: {endereco}</p>
+			</br>
+		</div>
+		<div class="slds-m-arround_medium" if:true={visible1}>
+			<p>Produto: {produto}</p>
+			<p>Descrição: {descricao}</p>
+			<p>Preço: R${preco} </p>
+			</br>
+		</div>
+		<div class="slds-m-arround_medium" if:true={visible1}>
+			<p>Promoção </p>
+			<p>oferta1: {oferta1} </p>
+			<p>oferta2: {oferta2}</p>
+			</br>
+		</div>
+		<lightning-button variant="brand" label="Esconder" title="Alterar Visible" onclick={esconder}
+			class="slds-m-left_x-small"></lightning-button>
+
+
+
+
+	</lightning-card>
+</template>
